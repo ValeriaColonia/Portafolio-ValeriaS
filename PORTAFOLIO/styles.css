@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio-cabeza */
+
+.flex-container-presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #edd2c7;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#nombre {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+#oracion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(14px, 1.8vw, 20px);
+    color: black;
+    text-align: center;
+}
+
+.flex-container-boton1 {
+    display: flex;
+    background-color: #edd2c7;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flex-container-retrato {
+    display: flex;
+    background-color: #edd2c7;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton2,
+.retrato,
+.boton3 {
+    margin: 0 40px
+}
+
+.flex-container-boton4 {
+    display: flex;
+    background-color: #edd2c7;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn.btn-primary {
+    background-color: #FFABC3;
+    border-color: #FFABC3;
+    color: black;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    padding: 0.6em 2em;
+    box-shadow: 0 2px 8px rgba(202, 118, 84, 0.25);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    background-color: #D0A7E3;
+    border-color: #D0A7E3;
+    color: #fffaf7;
+}
+
+.retrato svg {
+    width: clamp(120px, 24vw, 288px);
+    max-width: 90vw;
+    height: auto;
+    display: block;
+}
+
+/* sobre mi*/
+
+.flex-container-sobremi {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFABC3;
+    padding: 20px 40px;
+    gap: 40px;
+}
+
+.texto-sobre-mi {
+    flex: 2;
+    max-width: 200px;
+    min-width: 250px;
+    text-align: left;
+}
+
+#titulo-sobre-mi {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 700;
+    color: black;
+    text-align: start;
+}
+
+#texto {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(15px, 4vw, 20px);
+    color: black;
+    text-align: start;
+}
+
+
+.sobremi-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#foto-valeria {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 4px solid #D0A7E3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 800px) {
+    .flex-container-sobremi {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .sobremi-imagen {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #foto-valeria {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Habilidades */
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edd2c7;
+    padding: 20px;
+}
+
+.flex-container-tecnologias {
+    display: flex;
+    background-color: #edd2c7;
+    padding: 20px;
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.flex-container-tecnologias>div {
+    flex: 1 1 300px;
+    min-width: 280px;
+    background: #D0A7E3;
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tecnologia-titulo {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 700;
+    color: black;
+}
+
+#tecno {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: clamp(15px, 4vw, 30px);
+    font-weight: 700;
+    color: black;
+}
+
+#titulo-tecno {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(15px, 4vw, 20px);
+}
+
+.Frontend>div,
+.Backend>div {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+.box li h4 {
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(15px, 4vw, 20px);
+}
+
+/* Animacion habilidades */
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 18px;
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    height: 100%;
+    width: 0;
+    background-color: #FFABC3;
+    border-radius: inherit;
+    animation: grow 2s ease forwards;
+}
+
+@keyframes grow {
+    to {
+        width: var(--w);
+    }
+}
+
+.bar1 {
+    --w: 70%;
+}
+
+.bar2 {
+    --w: 90%;
+}
+
+.bar3 {
+    --w: 60%;
+}
+
+.bar4 {
+    --w: 95%;
+}
+
+.bar5 {
+    --w: 75%;
+}
+
+.bar1::before {
+    animation-delay: 0s;
+}
+
+.bar2::before {
+    animation-delay: .1s;
+}
+
+.bar3::before {
+    animation-delay: .2s;
+}
+
+.bar4::before {
+    animation-delay: .3s;
+}
+
+.bar5::before {
+    animation-delay: .4s;
+}
+
+/* Carrusel */
+
+.inicio-proyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFABC3;
+    padding: 20px;
+}
+
+#titulo-proyectos {
+    text-align: start;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 700;
+    color: black;
+}
+
+.container-proyecto {
+    display: block;
+    justify-content: space-between;
+    background-color: #FFABC3;
+    padding: 20px 16px;
+}
+
+#carouselExampleCaptions {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#carouselExampleCaptions .carousel-item {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#carouselExampleCaptions .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    max-width: 80%;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.carousel-caption h5 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-weight: 700;
+    color: #fcf6bc;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+.carousel-caption p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(.85rem, 1.3vw, 1rem);
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+    font-style: italic;
+}
+
+.carousel-caption:hover {
+    background: rgba(252, 246, 188, 0.9);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption:hover h5 {
+    color: #222;
+}
+
+.carousel-caption:hover p {
+    color: #222;
+    font-style: normal;
+}
+
+@media (max-width: 576px) {
+    #carouselExampleCaptions {
+        max-width: 100%;
+    }
+
+    .carousel-caption {
+        max-width: 92%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    #carouselExampleCaptions {
+        max-width: 1000px;
+    }
+}
